@@ -1,0 +1,101 @@
+@import url('@import url(https://fonts.googleapis.com/css?family=Dosis');
+
+* { box-sizing: border-box;}
+
+body {
+	margin: 0;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 100;
+}
+
+.header {
+	background: url(http://khongthe.com/wallpapers/abstract/molecules-247006.jpg) no-repeat center center;
+	background-size: cover;
+	height: 600px;
+	text-align: center;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px;
+	padding: 0 10px;
+}
+
+.nav {
+	background: #000;
+	height: 80px;
+	width: 100%;
+}
+
+.nav ul {
+	height: 80px;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.nav ul li {
+	color: #fff;
+	display: inline-block;
+	height: 80px;
+	line-height: 80px;
+	list-style: none;
+	padding: 0 10px;
+	transition:background .5s;
+}
+
+.nav ul li:hover {
+	background: #117bff;
+	cursor: pointer;
+	transition: background .5s;
+}
+
+.about .container {
+	margin: 80px auto;
+}
+
+.about img {
+	height: 20%;
+	width: 20%;
+	float: left;
+	padding: 20px;
+}
+
+.jumbotron {
+	background: url(http://www.wallpaperup.com/uploads/wallpapers/2013/12/23/203088/big_thumb_7b2641bd04eca2b103663bad03b11cf9.jpg) no-repeat center center;
+	background-size: cover;
+	height: 500px; 
+	width: 100%;
+	text-align: center;
+
+}
+
+.jumbotron .container {
+	position: relative;
+	top: 120px;
+	color: #fff;
+}
+
+.album {
+	background:#222;
+	perspective: 500;
+}
+
+.album a {
+	position: relative;
+	vertical-align: top;
+	height: 300px;
+	width: 50%;
+	display: inline-block;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 1s;
+	transform: scale(1);
+	perspective: 500;
+}
+
+.album a:hover {
+	transform: scale(1.1);
+	z-index: 10;
+}

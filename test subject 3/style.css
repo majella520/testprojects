@@ -1,0 +1,121 @@
+
+
+body {
+	margin: 0;
+}
+
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 20px 0;
+
+}
+
+.nav li {
+	display: inline;
+	color: #DAE5E8;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	margin-right: 50px;
+	text-transform: uppercase;
+}
+
+.header {
+	background-color: #333;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.jumbotron {
+	background: url(http://theartmad.com/wp-content/uploads/2015/02/Geometric-Triangle-Wallpaper-2.png) no-repeat center center;
+	background-size: cover;
+	height: 900px;
+}
+
+.main {
+	position: relative;
+	top: 200px;
+	text-align: center;
+}
+
+.main h1 {
+	color: #DAE5E8;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600px;
+	font-size: 70px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 80px;
+}
+
+.btn-main {
+	background-color: #DAE5E8;
+	height: 20px;
+	width: 100px;
+	padding: 16px 16px;
+	margin: auto;
+}
+
+.btn-main a {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600px;
+	font-size: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn-main a:hover {
+	font-size: 20px;
+	font-weight: 800px;
+}
+
+.button {
+	padding-top: 50px;
+	width: 0;
+	height: 0;
+	border-bottom: 150px solid #CC3299;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	display: inline-block;
+	opacity: 1;
+	transition: 1s;
+
+}
+
+.button:hover {
+	opacity: 0.5;
+}
+
+.supporting {
+	background-color: #DAE5E8;
+}
+
+.col {
+	width: 33%;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	display: inline-block;
+	padding-bottom: 50px;
+}
+
+
+p {
+	display: block;
+}
+
+.footer {
+	background-color: #333;
+	color: #DAE5E8;
+	padding: 20px 0;
+}
+
+.footer .container p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+}
+

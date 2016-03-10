@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Federo);
+
+* {
+    box-sizing: border-box; /* doesn't count padding as width */
+}
+
+body {
+    /* general styles */
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    background: #14efdf;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+/* overlay styles, all needed */
+body:after {
+    content: "";
+    display: block;
+    position: fixed; /* could also be absolute */ 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* just some content with arbitrary styles for explanation purposes */
+.modal {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+
+.content {
+    margin: 30px;
+}
+
+h1 {
+    font-family: 'Federo', sans-serif;
+}
+
+.form-field {
+    margin: 0 0 2.5em;
+    padding: 3em 0 0 0;
+    border: 0;
+    position: relative;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em;
+    border: none;
+    font-size: 20px;
+    line-height: 1em;
+    color: black;
+    transition: all .3s;
+}
+
+label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: center left;
+}
+
+input:focus + label {
+    transform: scale(0.8) translateY(-125%);
+}

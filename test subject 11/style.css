@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+img {
+	max-width: 100%;
+}
+
+
+.sea-creatures .row > div { /*pseudo selector selects only the direct child of .row (for this instance) */
+	padding: 0;
+	overflow: hidden;
+}
+
+.sea-creatures .row > div:hover .cover { /*when hovering over col-md-2 activates transformation - target parent container; base layer*/
+	opacity: 1;
+	transform: translateY(0%);
+}
+
+.sea-creatures .row > div img {
+	width: 100%;
+}
+
+.cover {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #7e8dab;
+	font-family: 'Muli', sans-serif;
+	color: white;
+	padding: 15% 10%;  /*top and bottom; left and right*/
+	text-align: center;
+	transform: translateY(100%);
+	opacity: 0;
+	transition: all 1.5s;
+}
+

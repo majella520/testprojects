@@ -1,0 +1,71 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	background: url('http://www.cliparthut.com/clip-arts/856/city-clip-art-856668.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+
+#panel_1 {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	height: 40%;
+	width: 20%;
+	background-color: #aaa8aa;
+	border: 1px solid white;
+	box-shadow: 10px 10px 5px #E5E5E5;
+	transition: 1s ease-in-out;
+}
+
+#panel_1:hover {
+	left: 20%;
+}
+
+#panel_2 {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	height: 20%;
+	width: 30%;
+	background-color: #aaa8aa;
+	border: 1px solid white;
+	box-shadow: 10px 10px 5px #E5E5E5;
+	transition: 1s ease-in-out;
+}
+
+#panel_2:hover {
+	top: 50%;
+}
+
+#panel_3 {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	height: 45%;
+	width: 15%;
+	background-color: #aaa8aa;
+	border: 1px solid white;
+	box-shadow: 10px 10px 5px #E5E5E5;
+	transition: 1s ease-in-out;
+}
+
+#panel_3:hover {
+	left: 55%;
+}
+
+#panel_4 {
+	position: absolute;
+	top: 80%;
+	left: 25%;
+	height: 20%;
+	width: 30%;
+	background-color: #aaa8aa;
+	border: 1px solid white;
+	box-shadow: 10px 10px 5px #E5E5E5;
+	transition: 1s ease-in-out;
+} 
+
+#panel_4:hover {
+	top: 65%;
+}
