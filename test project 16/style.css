@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Yesteryear);
+
+* { box-sizing: border-box;}
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.header {
+    position: relative;
+    background: url(images/brushstroke.png) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 10px;
+}
+
+h1, h2, h3 {
+    font-family: 'Yesteryear', cursive;
+    color:#c3a343;
+}
+
+h1 {
+    font-size: 800%;
+}
+
+h2 {
+    font-size: 500%;
+}
+
+
+.banner-title {
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.col-md-2 img {
+    max-width: 100%;
+}
+
+.artists .row > div { /*pseudo selector selects only the direct child of .row (for this instance) */
+    padding: 0;
+    overflow: hidden;
+}
+
+.artists .row > div:hover .cover { /*when hovering over col-md-2 activates transformation - target parent container; base layer*/
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.artists .row > div .col-md-2 img {
+    width: 100%;
+}
+
+.cover {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3f3f3f;
+    font-family: 'Muli', sans-serif;
+    color: white;
+    padding: 15% 10%;  /*top and bottom; left and right*/
+    text-align: center;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.feature .row {
+    margin: 50px 20px;
+}
+
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 80%;
+  margin: auto;
+}
+
+.item img {
+  width: 300px;
+  height: 200px;
+}
+
+/*.carousel-control {
+background: none !important;
+}*/
+
+.carousel-control.left, .carousel-control.right {
+  background: none; /*option to not use !important*/
+  color: black;
+  text-shadow: none;
+} 
+
