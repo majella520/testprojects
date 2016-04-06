@@ -31,15 +31,38 @@ $(document).ready(function(){
 		$(this).html('<span>'+text+'</span>');
 	});
 
-	/* Open */
-	function openNav() {
-	    document.getElementById("myNav").style.height = "100%";
+		// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the button that opens the modal
+	var trigger = document.getElementsByClassName("trigger")[0];
+
+	// Get the <span> element that closes the modal
+	var close = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on the button, open the modal
+	// console.log( trigger );
+	// $.each( trigger, function(index, arrayItem ){
+	// 	console.log(index+': '+arrayItem.style['backgroundImage']);
+	// });
+
+	trigger.onclick = function() {
+	    modal.style.display = "block";
 	}
 
-	/* Close */
-	function closeNav() {
-	    document.getElementById("myNav").style.height = "0%";
+	// When the user clicks on <span> (x), close the modal
+	close.onclick = function() {
+	    modal.style.display = "none";
 	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+
+	console.log('you derr?');
 
 	//$('.highlight').html('<span>bla bla bla</span>');
 

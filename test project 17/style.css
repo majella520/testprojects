@@ -1,0 +1,15 @@
+circle {
+    fill: none;
+    stroke-width: 5px;
+    stroke: #545454;
+}
+
+line {
+    stroke: #545454;
+    stroke-width: 20px;
+}
+
+svg {
+    height: auto;
+    width: 4%;
+}
